@@ -1,0 +1,15 @@
+.title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.listingWrap {
+  padding: 20px 0 56px;
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 17px;
+  }
+}

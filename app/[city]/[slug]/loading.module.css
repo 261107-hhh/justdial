@@ -1,0 +1,41 @@
+.hero {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.heroLine {
+  width: 320px;
+  height: 28px;
+}
+
+.heroLineSm {
+  width: 220px;
+  height: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding: 24px 0 56px;
+}
+
+.card {
+  height: 220px;
+  border-radius: var(--radius-lg);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

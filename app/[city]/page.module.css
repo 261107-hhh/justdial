@@ -1,0 +1,54 @@
+.hero {
+  background: linear-gradient(135deg, var(--color-brand-dark), var(--color-brand));
+  padding: 44px 0 56px;
+}
+
+.heroInner {
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.heroTitle {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.heroSubtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.heroSearch {
+  width: 100%;
+  max-width: 680px;
+  margin-top: 4px;
+}
+
+.ctaWrap {
+  padding: 12px 20px 48px;
+  text-align: center;
+}
+
+.cta {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-brand);
+  border: 1px dashed var(--color-brand);
+  border-radius: var(--radius-pill);
+  padding: 12px 22px;
+}
+
+.cta:hover {
+  background: var(--color-brand-light);
+}
+
+@media (max-width: 640px) {
+  .heroTitle {
+    font-size: 22px;
+  }
+}

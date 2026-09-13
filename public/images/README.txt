@@ -1,0 +1,1 @@
+Public image assets go here. This directory intentionally has no files; the app renders CSS-based placeholders instead (see components/common/ImagePlaceholder.jsx) and can be swapped for real images by adding files here and pointing to them in data/data.json.

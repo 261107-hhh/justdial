@@ -1,0 +1,32 @@
+.placeholder {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.92);
+  overflow: hidden;
+  position: relative;
+}
+
+.landscape {
+  aspect-ratio: 4 / 3;
+}
+.wide {
+  aspect-ratio: 16 / 9;
+}
+.square {
+  aspect-ratio: 1 / 1;
+}
+.tall {
+  aspect-ratio: 3 / 4;
+}
+
+.icon {
+  opacity: 0.95;
+}
+
+.initials {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}

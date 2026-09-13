@@ -1,0 +1,85 @@
+.form {
+  display: flex;
+  align-items: stretch;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  width: 100%;
+}
+
+.citySlot {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid var(--color-border);
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+.citySlot :global(button) {
+  border: none;
+  background: transparent;
+}
+
+.inputSlot {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 14px;
+  font-size: 14px;
+  background: transparent;
+  color: var(--color-text);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: var(--color-accent);
+  color: #fff;
+  padding: 0 20px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.15s ease;
+}
+
+.button:hover {
+  background: var(--color-accent-dark);
+}
+
+.md {
+  height: 48px;
+}
+
+.lg {
+  height: 58px;
+}
+.lg .input {
+  font-size: 15px;
+}
+
+@media (max-width: 640px) {
+  .buttonLabel {
+    display: none;
+  }
+  .button {
+    padding: 0 16px;
+  }
+  .citySlot :global(button) span {
+    max-width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+  }
+}

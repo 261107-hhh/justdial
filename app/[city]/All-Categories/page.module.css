@@ -1,0 +1,20 @@
+.title {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 13.5px;
+  color: var(--color-text-muted);
+  margin-top: 6px;
+}
+
+.gridWrap {
+  padding: 24px 0 56px;
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 20px;
+  }
+}
